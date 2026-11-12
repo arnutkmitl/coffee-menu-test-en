@@ -21,16 +21,8 @@ function renderMenu(items) {
 
 let shownItems = menu;
 
-function filterMenu(items, category) {
-  if (category === "All") {
-    return items;
-  }
-  return items.filter((item) => item.category === category);
-}
-
 function sortByPrice() {
-  const sorted = [...shownItems].sort((a, b) => a.price - b.price);
-  renderMenu(sorted);
+  renderMenu(sortItemsByPrice(shownItems));
 }
 
 for (const btn of document.querySelectorAll("#filters button")) {
