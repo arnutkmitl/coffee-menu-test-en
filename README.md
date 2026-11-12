@@ -14,7 +14,7 @@ Download or clone this project, then double-click index.html to open it in your 
 
 ## How to test
 
-1. The menu shows all six items.
+1. The menu shows all six items; Latte costs $4.50.
 2. Click Sort by price: Thai Iced Tea ($2.50) appears first.
 3. Click Toggle dark mode: the background turns dark and prices stay readable.
 
