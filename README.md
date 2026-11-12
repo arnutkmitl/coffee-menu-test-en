@@ -4,7 +4,7 @@ A menu web page for a fictional coffee shop (all data is sample data), used as t
 
 ## How to open the app
 
-Download or clone this project, then double-click index.html to open it in your browser. Nothing else needs to be installed.
+See the app online at https://arnutkmitl.github.io/coffee-menu-test-en/, or download or clone this project and double-click index.html to open it in your browser. Nothing else needs to be installed.
 
 ## Features
 
@@ -14,6 +14,10 @@ Download or clone this project, then double-click index.html to open it in your 
 - Category filter buttons
 
 ## How to test
+
+Automated tests: run `node --test` (requires Node.js). GitHub Actions runs them on every PR.
+
+Manual checks in the browser:
 
 1. The menu shows all eight items; Latte costs $4.50.
 2. Click Sort by price: Thai Iced Tea ($2.50) appears first.
