@@ -1,6 +1,6 @@
 const test = require("node:test");
 const assert = require("node:assert");
-const { filterMenu, sortItemsByPrice } = require("../menu-logic.js");
+const { filterMenu, sortItemsByPrice, addToCart, cartSummary } = require("../menu-logic.js");
 
 const sample = [
   { name: "Latte", price: 4.5, category: "Coffee" },
@@ -30,4 +30,16 @@ test("sorts by price, lowest first", () => {
 test("sorting does not change the original list", () => {
   sortItemsByPrice(sample);
   assert.strictEqual(sample[0].name, "Latte");
+});
+
+test("adding to the cart does not change the original cart", () => {
+  const cart = [];
+  const newCart = addToCart(cart, sample[0]);
+  assert.strictEqual(cart.length, 0);
+  assert.strictEqual(newCart.length, 1);
+});
+
+test("cart summary counts items and adds up prices", () => {
+  const cart = addToCart(addToCart([], sample[0]), sample[1]);
+  assert.deepStrictEqual(cartSummary(cart), { count: 2, total: 7 });
 });
