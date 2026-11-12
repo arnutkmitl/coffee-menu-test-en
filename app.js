@@ -51,3 +51,8 @@ renderMenu(menu);
 document.getElementById("theme-btn").addEventListener("click", () => {
   document.body.classList.toggle("dark");
 });
+
+document.getElementById("clear-cart-btn").addEventListener("click", () => {
+  cart = [];
+  renderCart();
+});
