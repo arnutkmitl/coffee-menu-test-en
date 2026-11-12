@@ -12,6 +12,7 @@ See the app online at https://arnutkmitl.github.io/coffee-menu-test-en/, or down
 - Sort-by-price button
 - Dark mode toggle
 - Category filter buttons
+- Demo cart with item count and total (no real payment)
 
 ## How to test
 
@@ -24,6 +25,8 @@ Manual checks in the browser:
 3. Click Toggle dark mode: the background turns dark and prices stay readable.
 4. Click Coffee: five items remain. Click Tea: only Thai Iced Tea remains. Click Pastries: two items remain. Click All: all eight items return.
 5. Filter by Coffee, then click Sort by price: only those five items are sorted.
+6. Add Latte and Brownie: the cart shows 2 items, total $9.00.
+7. Click Clear cart: the cart returns to 0 items, total $0.00.
 
 ## Contact
 
