@@ -18,3 +18,7 @@ Download or clone this project, then double-click index.html to open it in your 
 2. Click Sort by price: Thai Iced Tea ($2.50) appears first.
 3. Click Toggle dark mode: the background turns dark and prices stay readable.
 
+
+## Contact
+
+Phone: 555-0100 (fictional number)
