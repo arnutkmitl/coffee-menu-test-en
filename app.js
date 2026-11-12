@@ -6,7 +6,7 @@ const menu = [
   { name: "Mocha", price: 4.5, desc: "Espresso, chocolate, steamed milk", category: "Coffee" },
   { name: "Thai Iced Tea", price: 2.5, desc: "House recipe, less sweet on request", category: "Tea" },
   { name: "Croissant", price: 3, desc: "Real butter, baked fresh every morning", category: "Pastries" },
-  { name: "Brownie", price: 4, desc: "Rich dark chocolate", category: "Pastries" }
+  { name: "Brownie", price: 4.5, desc: "Rich dark chocolate", category: "Pastries" }
 ];
 
 function renderMenu(items) {
