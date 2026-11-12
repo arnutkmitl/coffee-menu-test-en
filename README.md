@@ -8,17 +8,17 @@ Download or clone this project, then double-click index.html to open it in your 
 
 ## Features
 
-- Shows drinks with prices and descriptions
+- Shows drinks and pastries with prices and descriptions
 - Sort-by-price button
 - Dark mode toggle
 - Category filter buttons
 
 ## How to test
 
-1. The menu shows all six items; Latte costs $4.50.
+1. The menu shows all eight items; Latte costs $4.50.
 2. Click Sort by price: Thai Iced Tea ($2.50) appears first.
 3. Click Toggle dark mode: the background turns dark and prices stay readable.
-4. Click Coffee: five items remain. Click Tea: only Thai Iced Tea remains. Click All: all six items return.
+4. Click Coffee: five items remain. Click Tea: only Thai Iced Tea remains. Click Pastries: two items remain. Click All: all eight items return.
 5. Filter by Coffee, then click Sort by price: only those five items are sorted.
 
 ## Contact
