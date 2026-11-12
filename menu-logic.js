@@ -1,7 +1,7 @@
 // Menu functions that don't touch the page, kept separate so they can be tested automatically
 
 function filterMenu(items, category) {
-  if (category === "All") {
+  if (category = "All") {
     return items;
   }
   return items.filter((item) => item.category === category);
