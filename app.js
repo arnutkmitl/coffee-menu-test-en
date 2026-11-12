@@ -1,10 +1,10 @@
 const menu = [
-  { name: "Espresso", price: 3, desc: "Bold shot, medium roast" },
-  { name: "Latte", price: 4.5, desc: "Whole milk, double shot" },
-  { name: "Cappuccino", price: 4, desc: "Thick foam, dusted with cocoa" },
-  { name: "Americano", price: 3.5, desc: "Espresso topped with hot water" },
-  { name: "Mocha", price: 4.5, desc: "Espresso, chocolate, steamed milk" },
-  { name: "Thai Iced Tea", price: 2.5, desc: "House recipe, less sweet on request" }
+  { name: "Espresso", price: 3, desc: "Bold shot, medium roast", category: "Coffee" },
+  { name: "Latte", price: 4.5, desc: "Whole milk, double shot", category: "Coffee" },
+  { name: "Cappuccino", price: 4, desc: "Thick foam, dusted with cocoa", category: "Coffee" },
+  { name: "Americano", price: 3.5, desc: "Espresso topped with hot water", category: "Coffee" },
+  { name: "Mocha", price: 4.5, desc: "Espresso, chocolate, steamed milk", category: "Coffee" },
+  { name: "Thai Iced Tea", price: 2.5, desc: "House recipe, less sweet on request", category: "Tea" }
 ];
 
 function renderMenu(items) {
@@ -17,9 +17,25 @@ function renderMenu(items) {
   }
 }
 
+let shownItems = menu;
+
+function filterMenu(items, category) {
+  if (category === "All") {
+    return items;
+  }
+  return items.filter((item) => item.category === category);
+}
+
 function sortByPrice() {
-  const sorted = [...menu].sort((a, b) => a.price - b.price);
+  const sorted = [...shownItems].sort((a, b) => a.price - b.price);
   renderMenu(sorted);
+}
+
+for (const btn of document.querySelectorAll("#filters button")) {
+  btn.addEventListener("click", () => {
+    shownItems = filterMenu(menu, btn.dataset.category);
+    renderMenu(shownItems);
+  });
 }
 
 document.getElementById("sort-btn").addEventListener("click", sortByPrice);
