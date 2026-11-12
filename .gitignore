@@ -1,0 +1,12 @@
+# Secrets and machine-specific settings
+.env
+
+# Installed libraries (can be reinstalled)
+node_modules/
+
+# Files created by the operating system
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
