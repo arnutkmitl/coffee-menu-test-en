@@ -1,6 +1,6 @@
 # SysAdmin Knowledge
 
-A menu web page for a fictional coffee shop, used as the practice project in the book Git & GitHub for AI-Assisted Developers.
+A menu web page for a fictional coffee shop (all data is sample data), used as the practice project in the book Git & GitHub for AI-Assisted Developers.
 
 ## How to open the app
 
