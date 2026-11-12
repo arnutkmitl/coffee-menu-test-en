@@ -43,3 +43,7 @@ test("cart summary counts items and adds up prices", () => {
   const cart = addToCart(addToCart([], sample[0]), sample[1]);
   assert.deepStrictEqual(cartSummary(cart), { count: 2, total: 7 });
 });
+
+test("an empty cart has 0 items and a $0 total", () => {
+  assert.deepStrictEqual(cartSummary([]), { count: 0, total: 0 });
+});

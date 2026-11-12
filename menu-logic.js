@@ -16,7 +16,7 @@ function addToCart(cart, item) {
 }
 
 function cartSummary(cart) {
-  const total = cart.map((item) => item.price).reduce((a, b) => a + b);
+  const total = cart.map((item) => item.price).reduce((a, b) => a + b, 0);
   return { count: cart.length, total };
 }
 
